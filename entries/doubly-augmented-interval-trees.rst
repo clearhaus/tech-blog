@@ -1,18 +1,18 @@
 Doubly-augmented interval trees
 ===============================
 
-Firstly, an interval tree is, well, a tree of intervals. But, it's a `binary
-search tree`_. And, a "traditional" `augmented interval tree`_ is where the BST
-is sorted by "minimal endpoint" and you augment each node `x` with "maximal
-right endpoint in subtree rooted in `x`".
+Firstly, an interval tree is, well, a tree of intervals. But, it's also a
+`binary search tree`_ (BST). And, a "traditional" `augmented interval tree`_ is
+where the BST is sorted by the nodes' left endpoint and you augment each node
+`x` with "maximal right endpoint in subtree rooted in `x`".
 
 .. _`binary search tree`: https://en.wikipedia.org/wiki/Binary_search_tree
 .. _`augmented interval tree`: https://en.wikipedia.org/wiki/Interval_tree#Augmented_tree
 
-
-Introducing what I hereby name "doubly-augmented interval trees": Just add also
-`min`; say, augment each node `x` with "maximal right endpoint in subtree rooted
-in `x`" and "minimal left endpoint in subtree rooted in `x`".
+Introducing what I hereby name "doubly-augmented interval trees": Just also
+augment with the minimum; say, augment each node `x` with "maximal right
+endpoint in subtree rooted in `x`" and "minimal left endpoint in subtree rooted
+in `x`".
 
 
 What is it good for
